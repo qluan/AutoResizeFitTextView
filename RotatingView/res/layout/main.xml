@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray">
+
+    <com.demo.rotatingview.widget.RotatingView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true">
+
+        <com.demo.rotatingview.widget.AutoResizeFitTextView
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:text=""
+            android:textSize="20sp"
+            android:hint="your content will auto resize"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black" />
+    </com.demo.rotatingview.widget.RotatingView>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:hint="click here to input"
+        android:textSize="20sp" />
+</RelativeLayout>
+
